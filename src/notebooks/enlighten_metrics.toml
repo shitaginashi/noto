@@ -1,0 +1,15 @@
+[metrics]
+
+relevance_density = 0.0
+tension = 0.0
+novelty = 0.0
+diversity = 0.0
+
+[utility]
+
+state = "emerging"
+
+[contribution]
+
+inbound = 0
+outbound = 0

@@ -1,0 +1,20 @@
+[nodes]
+
+local = [
+  "pattern",
+  "antipattern",
+  "taiji",
+  "mu",
+  "insight",
+  "intelligence",
+  "wisdom",
+  "enlightenment"
+]
+
+[candidates]
+
+durable = [
+  "pattern_antipattern_boundary",
+  "taiji_addressed_relevance",
+  "knowledge_nodes_wisdom_relationships"
+]

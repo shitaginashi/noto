@@ -1,0 +1,18 @@
+[identity]
+
+notebook_id = "enlighten.pattern_mu"
+title = "Enlightenment as Pattern, Antipattern, and Mu"
+
+[core_hex]
+
+id = 13
+
+[polarity]
+
+governance = "neutral"
+participation = "isolated"
+
+[provenance]
+
+origin = "enlightenment_pattern_antipattern_mu"
+schema_version = "2.0"
