@@ -5,3 +5,6 @@
 .idea/
 *.code-workspace
 .DS_Store
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[pP][nN][gG]
