@@ -1,10 +1,9 @@
 /target/
 
-cat > .gitignore <<'EOF'
-/target/
 .roo/
 .vscode/
 .idea/
 *.code-workspace
 .DS_Store
-EOF
+src/notebooks/000/iczer/*.png
+bogus/

@@ -1,0 +1,16 @@
+# Rust Development Rules & Idiomatic Constraints
+
+## 1. Error Handling Policy (Zero Panic Policy)
+- **NEVER use `.unwrap()` or `.expect()`** in production code paths or library crates. Every `Result` or `Option` must be handled explicitly.
+- Use pattern matching (`match`, `if let`), combinators (`map`, `and_then`, `ok_or`), or the `?` propagation operator.
+- Custom error types must implement `std::error::Error` and use `thiserror` or `anyhow` where appropriate. Panics are restricted strictly to unrecoverable initialization failures or test assertions (`assert!`, `panic!`).
+
+## 2. Idiomatic Code Construction
+- Favor safe abstractions and idiomatic Rust constructs over unsafe blocks or C-style pointer manipulation.
+- Explicitly annotate lifetimes only when required by the compiler; leverage lifetime elision rules where possible.
+- Adhere strictly to zero-cost abstractions, avoiding unnecessary heap allocations (`Box`, `Arc`) in hot paths where stack allocation or generics suffice.
+
+## 3. Verification Loop
+- After modifying any file, you **must** invoke the terminal tool to execute validation tests.
+- Run `cargo check --all-targets` and `cargo test` to confirm compilation success and passing tests. 
+- If compiler errors or warnings occur, parse the stderr stream, isolate the exact borrow-checker or trait-bound violation, and iteratively self-correct before presenting the solution.
