@@ -1,0 +1,137 @@
+schema_version = "0.3"
+registry_version = "draft"
+
+[identity]
+notebook_id = "teaser"
+title = "Narrative Compression Architecture"
+artifact_type = "notebook"
+
+[jurisdiction]
+owns = [
+  "patterns",
+  "concepts",
+  "assets",
+  "families",
+  "deferred"
+]
+
+excludes = [
+  "participation",
+  "occupancy",
+  "distribution",
+  "clustering",
+  "inheritance",
+  "lineage"
+]
+
+[source_artifacts]
+notes = "teaser_notes.md"
+atlas = "teaser_atlas.md"
+guide = "teaser_guide.md"
+index = "teaser_index.md"
+
+[subscriptions]
+imports = [
+  "edit.relationship_architecture"
+]
+
+consumes = [
+  "edit.narrative_story",
+  "edit.serialization",
+  "edit.relationships",
+  "edit.escalation"
+]
+
+[exports]
+provides = [
+  "narrative_compression",
+  "guided_incompleteness",
+  "atmosphere_emotional_topology",
+  "story_construction",
+  "compression_scale_duality"
+]
+
+[discoverability]
+tags = [
+  "teaser",
+  "narrative",
+  "compression",
+  "story",
+  "atmosphere",
+  "escalation",
+  "engagement",
+  "guided_incompleteness"
+]
+
+[key_patterns]
+patterns = [
+  "from_to",
+  "escalation"
+]
+
+[key_concepts]
+concepts = [
+  "guided_incompleteness",
+  "atmosphere",
+  "narrative_story"
+]
+
+[key_assets]
+assets = [
+  "worlds_above_beneath",
+  "dunwich_sentinel",
+  "innsmouth_reef",
+  "zin_leng"
+]
+
+[key_families]
+families = [
+  "condition",
+  "causality",
+  "agency",
+  "attention",
+  "threshold",
+  "revelation",
+  "closure",
+  "transform",
+  "identity_persistence"
+]
+
+[deferred]
+candidates = [
+  "fanservice"
+]
+
+[durable_candidates]
+structures = [
+  "narrative_transmission",
+  "story_construction",
+  "guided_incompleteness",
+  "atmosphere_emotional_topology",
+  "compression_scale_duality",
+  "discovery_order_not_dependency_order"
+]
+
+[registry]
+addressable = true
+exportable = true
+subscribable = true
+
+[governance]
+status = "observed"
+promotion = "external"
+ratification = "tian"
+
+[notes]
+comment = """
+Registry defines identity and jurisdiction.
+
+Guide defines membership.
+
+Index defines observations.
+
+Future Lineage will define inheritance.
+
+No participation, clustering, ecology,
+or confidence data should live here.
+"""

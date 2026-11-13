@@ -1,0 +1,15 @@
+[weights]
+
+pattern     = 1.0
+concept     = 1.0
+requirement = 0.3
+template    = 0.1
+deliverable = 0.0
+
+[subscriptions]
+
+enabled = []
+
+[exports]
+
+enabled = []

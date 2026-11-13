@@ -1,0 +1,254 @@
+schema_version: "0.3"
+artifact_type: "lineage"
+
+identity:
+  notebook_id: "teaser"
+  title: "Narrative Compression Architecture"
+
+purpose: >
+  Preserve continuity through revision,
+  inheritance, replacement, succession,
+  rejection, and survival.
+
+jurisdiction:
+
+  owns:
+    - ancestry
+    - succession
+    - inheritance
+    - continuity
+    - trigger
+    - supersession
+    - preserved_traits
+    - rejected_traits
+    - replacement
+
+  excludes:
+    - membership
+    - participation
+    - occupancy
+    - distribution
+    - clustering
+    - confidence
+    - ontology
+
+status:
+  lineage: active
+
+records:
+
+  - id: teaser.family.too_deep_old_late
+
+    active: true
+
+    ancestry: []
+
+    continuity:
+      durable_function: condition_compression
+
+    trigger:
+
+      observations:
+        - implication consistently outperformed exposition
+
+      contradiction:
+        - information density failed to produce engagement
+
+      pressure:
+        - audience_construction_requirement
+
+      realization: >
+        Compression generates stronger participation than information delivery.
+
+    preserved:
+      - implication
+      - compression
+      - audience_construction
+      - guided_incompleteness
+      - mystery_through_omission
+
+    rejected:
+      - information_first_delivery
+      - direct_exposition
+      - explicit_narrative_framing
+
+    inherited_by: []
+
+    supersession:
+      authority: canonical
+      supersedes: []
+      superseded_by: []
+
+    provenance:
+      source: guide
+      category: compression_family
+
+  - id: teaser.family.signal_response_warning
+
+    active: true
+
+    ancestry: []
+
+    continuity:
+      durable_function: causal_escalation
+
+    trigger:
+
+      observations:
+        - audiences inferred causality from minimal sequencing
+
+      contradiction:
+        - direct explanation reduced participation
+
+      pressure:
+        - escalation_requirement
+
+      realization: >
+        Causality can be implied rather than stated.
+
+    preserved:
+      - implication
+      - escalation
+      - audience_construction
+      - guided_incompleteness
+      - minimal_signal
+      - maximum_inference
+
+    rejected:
+      - exposition_heavy_progression
+      - direct_causal_explanation
+      - lore_first_delivery
+
+    inherited_by:
+      - teaser.family.watched_waited_arrived_left
+
+    supersession:
+      authority: canonical
+      supersedes: []
+      superseded_by: []
+
+    provenance:
+      source: guide
+      category: compression_family
+
+  - id: teaser.family.watched_waited_arrived_left
+
+    active: true
+
+    ancestry:
+      - teaser.family.signal_response_warning
+
+    continuity:
+      durable_function: agency_escalation
+
+    trigger:
+
+      observations:
+        - causal escalation repeatedly migrated toward agents
+
+      contradiction:
+        - event chains lacked persistence
+
+      pressure:
+        - agency_requirement
+
+      realization: >
+        Persistent agency carries escalation more effectively than events alone.
+
+    preserved:
+      - agency_escalation
+      - narrative_compression
+      - retrospective_reinterpretation
+      - audience_construction
+      - compression_through_omission
+
+    rejected:
+      - explicit_chronology
+      - direct_exposition
+      - lore_first_delivery
+      - complete_causal_explanation
+
+    inherited_by: []
+
+    supersession:
+      authority: canonical
+      supersedes: []
+      superseded_by: []
+
+    provenance:
+      source: guide
+      category: agency_family
+
+  - id: teaser.family.not_lost_waiting
+
+    active: true
+
+    ancestry: []
+
+    continuity:
+      durable_function: attention_preservation
+
+    trigger:
+
+      observations:
+        - reinterpretation generated stronger engagement than clarification
+
+      contradiction:
+        - direct answers terminated participation
+
+      pressure:
+        - relevance_requirement
+
+      realization: >
+        Attention can be preserved by reframing rather than explaining.
+
+    preserved:
+      - attention_preservation
+      - recontextualization
+      - narrative_pressure
+      - audience_revision
+      - compression_through_reclassification
+      - guided_reinterpretation
+
+    rejected:
+      - explicit_clarification
+      - direct_exposition
+      - premature_resolution
+      - complete_causal_framing
+
+    inherited_by:
+      - teaser.family.it_was
+
+    supersession:
+      authority: canonical
+      supersedes: []
+      superseded_by: []
+
+    provenance:
+      source: guide
+      category: attention_family
+
+  - id: teaser.family.almost_threshold
+
+    active: true
+
+    ancestry: []
+
+    continuity:
+      durable_function: threshold_pressure
+
+    trigger:
+
+      observations:
+        - delayed revelation increased anticipation
+
+      contradiction:
+        - immediate resolution collapsed tension
+
+      pressure:
+        - expectation_requirement
+
+      realization: >
+        Imminence can sustain narrative pressure without resolution.
+
+    

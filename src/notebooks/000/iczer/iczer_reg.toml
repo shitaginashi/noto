@@ -1,0 +1,62 @@
+schema_version = "1.0"
+registry_version = "canonical"
+
+[identity]
+notebook_id = "iczer"
+title = "Humanity, Synchronization, and the Veil"
+artifact_type = "atomic_notebook"
+
+[nodes]
+local = [
+  "humanity",
+  "synchronization",
+  "assimilation",
+  "compassion",
+  "tangency",
+  "difference",
+  "perspective",
+  "wisdom",
+  "civilization",
+  "veil",
+  "song",
+  "sanity",
+  "madness",
+  "culture",
+  "tradition",
+  "reality_maintenance"
+]
+
+[candidates]
+durable = [
+  "humanity_as_participation",
+  "synchronization_vs_assimilation",
+  "compassion_as_tangency",
+  "difference_creates_wisdom",
+  "civilization_as_reality_maintenance",
+  "veil_as_song",
+  "sanity_as_synchronization"
+]
+
+[attachments]
+candidates = []
+
+[discoverability]
+tags = [
+  "humanity",
+  "synchronization",
+  "assimilation",
+  "compassion",
+  "tangency",
+  "wisdom",
+  "civilization",
+  "veil",
+  "song",
+  "culture",
+  "reality",
+  "cosmic_horror"
+]
+
+[registry]
+addressable = true
+exportable = true
+subscribable = true

@@ -1,0 +1,18 @@
+[identity]
+
+notebook_id = "ro"
+title = "Relational Ontology: Locality, Liberty, and TAN"
+
+[core_hex]
+
+id = []
+
+[polarity]
+
+governance = ""
+participation = ""
+
+[provenance]
+
+origin = "dialogue-derived"
+schema_version = "3.1"

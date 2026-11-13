@@ -1,0 +1,8 @@
+schema_version = "0.3"
+registry_version = "draft"
+
+[nodes]
+local = []
+
+[candidates]
+durable = []

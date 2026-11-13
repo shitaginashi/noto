@@ -1,0 +1,33 @@
+deltas:
+  - id: "delta_patterns_1"
+    source_node: "patterns"
+    target_candidate: "narrative_transmission"
+    relevance_score: 0.5
+  - id: "delta_patterns_2"
+    source_node: "patterns"
+    target_candidate: "story_construction"
+    relevance_score: 0.5
+  - id: "delta_patterns_3"
+    source_node: "patterns"
+    target_candidate: "guided_incompleteness"
+    relevance_score: 0.5
+  - id: "delta_patterns_4"
+    source_node: "patterns"
+    target_candidate: "atmosphere_emotional_topology"
+    relevance_score: 0.5
+  - id: "delta_patterns_5"
+    source_node: "patterns"
+    target_candidate: "compression_scale_duality"
+    relevance_score: 0.5
+  - id: "delta_patterns_6"
+    source_node: "patterns"
+    target_candidate: "discovery_order_not_dependency_order"
+    relevance_score: 0.5
+  - id: "delta_guided_incompleteness_7"
+    source_node: "guided_incompleteness"
+    target_candidate: "guided_incompleteness"
+    relevance_score: 0.5
+  - id: "delta_atmosphere_8"
+    source_node: "atmosphere"
+    target_candidate: "atmosphere_emotional_topology"
+    relevance_score: 0.5

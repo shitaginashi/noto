@@ -1,0 +1,57 @@
+schema_version = "1.0"
+registry_version = "canonical"
+
+[identity]
+notebook_id = "edit"
+title = "Editing as Relationship Architecture"
+artifact_type = "atomic_notebook"
+
+[nodes]
+local = [
+  "editing",
+  "serialization",
+  "relationship",
+  "transition",
+  "escalation",
+  "compression",
+  "audience_inference",
+  "meaning_architecture",
+  "narrative",
+  "story"
+]
+
+[candidates]
+durable = [
+  "editing_as_relationship_architecture",
+  "serialization_creates_relationships",
+  "transition_as_semantic_operator",
+  "audience_as_coauthor",
+  "escalation_gradients",
+  "compression_through_implication"
+]
+
+[attachments]
+candidates = [
+  "fanservice_as_compression_mechanism",
+  "color_as_vocabulary",
+  "symbol_as_card_system"
+]
+
+[discoverability]
+tags = [
+  "editing",
+  "serialization",
+  "relationship_architecture",
+  "meaning_architecture",
+  "compression",
+  "escalation",
+  "implication",
+  "audience",
+  "narrative",
+  "story"
+]
+
+[registry]
+addressable = true
+exportable = true
+subscribable = true

@@ -1,0 +1,10 @@
+/target/
+
+cat > .gitignore <<'EOF'
+/target/
+.roo/
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+EOF

@@ -1,0 +1,18 @@
+- filename_prefix: "upsk"
+  scheduler: "simple"
+  positive_prompt: "score_9, score_8_up, score_7_up, score_6_up, [prompt], cinematic lighting."
+  samplers:
+    -  deis_2m_ode
+    -  deis_2m
+    -  res_6s_ode
+    -  res_5s_ode
+    -  res_3s_ode
+    -  res_2s_ode
+    -  res_3m_ode
+    -  res_2m_ode
+    -  res_6s
+    -  res_5s
+    -  res_3s
+    -  res_2s
+    -  res_3m
+    -  res_2m

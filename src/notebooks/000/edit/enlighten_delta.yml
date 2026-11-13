@@ -1,0 +1,13 @@
+deltas:
+  - id: "delta_editing_1"
+    source_node: "editing"
+    target_candidate: "editing_as_relationship_architecture"
+    relevance_score: 0.5
+  - id: "delta_relationship_2"
+    source_node: "relationship"
+    target_candidate: "editing_as_relationship_architecture"
+    relevance_score: 0.5
+  - id: "delta_relationship_3"
+    source_node: "relationship"
+    target_candidate: "serialization_creates_relationships"
+    relevance_score: 0.5

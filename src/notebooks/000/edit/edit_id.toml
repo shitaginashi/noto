@@ -1,0 +1,9 @@
+[identity]
+notebook_id = "edit.relationship_architecture"
+title = "Editing as Relationship Architecture"
+
+[classification]
+type = "atomic_notebook"
+
+[provenance]
+schema_version = "3.0"

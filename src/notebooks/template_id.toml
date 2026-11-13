@@ -1,0 +1,18 @@
+[identity]
+
+notebook_id = ""
+title = ""
+
+[core_hex]
+
+id = []
+
+[polarity]
+
+governance = ""
+participation = ""
+
+[provenance]
+
+origin = ""
+schema_version = "3.1"

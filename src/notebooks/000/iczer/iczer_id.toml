@@ -1,0 +1,14 @@
+[identity]
+notebook_id = "iczer.synchronization_veil"
+title = "Humanity, Synchronization, and the Veil"
+
+[classification]
+type = "atomic_notebook"
+status = "active"
+
+[provenance]
+origin = "iczer_humanity_synchronization_veil"
+schema_version = "3.0"
+
+[addressing]
+core_hex = 14
