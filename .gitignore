@@ -5,5 +5,3 @@
 .idea/
 *.code-workspace
 .DS_Store
-src/notebooks/000/iczer/*.png
-bogus/
