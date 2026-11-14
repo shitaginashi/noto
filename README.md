@@ -1,6 +1,6 @@
 # noto ノート (nōto)
 
-**noto** is a research proof of concept for a local, question-driven notebook runtime written in Rust. It explores how a question can select relevant material from a notebook, create a temporary frame, and surface candidate correspondences (“deltas”) for inspection.
+**noto** is a research proof of concept for a local, question-driven notebook runtime written in Rust. It explores how a question can select relevant material from a notebook, create a temporary frame, compare it with candidate structures, and report exploratory metrics about relevance, novelty, and diversity.
 
 This is experimental software—not a production notebook application, database, or general-purpose AI system.
 
@@ -8,7 +8,7 @@ This is experimental software—not a production notebook application, database,
 
 The project explores a simple premise: knowledge may emerge not just by accumulating notes, but by finding useful relationships between them.
 
-In the prototype, a question is used to hydrate a frame from notebook-local registry entries and text. The runtime compares relevant nodes with candidate structures, reports exploratory metrics, and can persist discovered delta candidates. It does not call an external language model.
+In the prototype, a question is used to hydrate a frame from notebook-local registry entries and text. The runtime compares relevant nodes with candidate structures, reports exploratory metrics, and appends discovered candidates to `enlighten_delta.yml`.
 
 ## What the prototype does
 
@@ -37,12 +37,26 @@ cargo test
 Pass the path to a directory containing a notebook’s metadata files, followed by a question:
 
 ```sh
-cargo run -- <notebook-directory> "What is wisdom?"
+cargo run -- src/notebooks/000/teaser "What is wisdom?"
 ```
 
 If no directory is supplied, the CLI defaults to `notebooks`. If no question is supplied, it defaults to `What is wisdom?`.
 
-The loader expects the relevant files directly inside the supplied directory (it does not recursively search subdirectories). It requires an `_id.toml` file and an `_reg.toml` file; governance and metrics files are optional.
+The loader requires the notebook files to live directly inside the supplied directory; it does not recurse into subdirectories. In this repository, the sample notebook workspace is `src/notebooks/000/teaser`, which is a valid single-notebook directory because it contains the metadata files directly under that folder.
+
+Example:
+
+```sh
+cargo run -- src/notebooks/000/teaser "What is wisdom?"
+```
+
+If you want to use the built-in default path instead, create a local `notebooks/` directory with the same flat layout, then run:
+
+```sh
+mkdir -p notebooks
+# copy or symlink the notebook metadata files into notebooks/
+cargo run -- notebooks "What is wisdom?"
+```
 
 ## Notebook file conventions
 
