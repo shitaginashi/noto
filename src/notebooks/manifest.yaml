@@ -1,0 +1,101 @@
+manifest_version: 1
+name: noto notebook resources
+purpose: >-
+  Agent-facing catalog of notebook templates, runtime source, and project guidance.
+  This manifest links to canonical files; it does not duplicate their contents.
+repository: https://github.com/shitaginashi/noto
+
+navigation:
+  agent_guidance:
+    path: AGENTS.md
+    url: https://github.com/shitaginashi/noto/blob/main/AGENTS.md
+  overview:
+    path: README.md
+    url: https://github.com/shitaginashi/noto/blob/main/README.md
+
+notebook_templates:
+  - id: atlas
+    path: src/notebooks/template_atlas.md
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_atlas.md
+    format: markdown
+    purpose: Structured notebook synthesis: claims, evidence, correspondences, tensions, and candidates.
+  - id: delta
+    path: src/notebooks/template_delta.yml
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_delta.yml
+    format: yaml
+    purpose: Records changes or candidate transitions for a notebook.
+  - id: governance
+    path: src/notebooks/template_gov.toml
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_gov.toml
+    format: toml
+    purpose: Weights, subscriptions, and export settings.
+  - id: identity
+    path: src/notebooks/template_id.toml
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_id.toml
+    format: toml
+    purpose: Notebook identity, classification context, polarity, and provenance.
+  - id: lineage
+    path: src/notebooks/template_lineage.yml
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_lineage.yml
+    format: yaml
+    purpose: Ancestry, continuity, triggers, preserved and rejected traits, and supersession.
+  - id: metrics
+    path: src/notebooks/template_metrics.toml
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_metrics.toml
+    format: toml
+    purpose: Exploratory metrics and contribution metadata.
+  - id: notes
+    path: src/notebooks/template_notes.md
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_notes.md
+    format: markdown
+    purpose: Dialogue/session notes, revisions, discoveries, and unresolved questions.
+  - id: registry
+    path: src/notebooks/template_reg.toml
+    url: https://github.com/shitaginashi/noto/blob/main/src/notebooks/template_reg.toml
+    format: toml
+    purpose: Registry identity, jurisdiction, nodes, and candidate structures.
+
+runtime_sources:
+  - id: cli
+    path: src/main.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/main.rs
+    purpose: CLI arguments and runtime pipeline.
+  - id: notebook_model
+    path: src/model.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/model.rs
+    purpose: Rust data structures and deserialization for notebook metadata.
+  - id: loader
+    path: src/loader.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/loader.rs
+    purpose: File discovery and loading behavior; reads files directly inside the supplied directory.
+  - id: frame_hydrator
+    path: src/hydrator.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/hydrator.rs
+    purpose: Question-based selection of registry nodes and text context.
+  - id: correspondence_engine
+    path: src/correspondence.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/correspondence.rs
+    purpose: Heuristic discovery of delta candidates.
+  - id: metrics
+    path: src/metrics.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/metrics.rs
+    purpose: Exploratory metric calculations; outputs are not validated measures.
+  - id: delta_persistence
+    path: src/delta.rs
+    url: https://github.com/shitaginashi/noto/blob/main/src/delta.rs
+    purpose: Appends discovered candidates to enlighten_delta.yml.
+
+sample_notebook:
+  id: teaser
+  directory: src/notebooks/000/teaser
+  url: https://github.com/shitaginashi/noto/tree/main/src/notebooks/000/teaser
+  note: >-
+    This sample contains notebook artifacts for inspection. The runtime requires
+    a flat input directory containing the required *_id.toml and *_reg.toml files;
+    it does not recursively discover files in nested directories.
+
+agent_notes:
+  - Templates are starting points, not proof that every field is consumed by the runtime.
+  - Consult runtime_sources.loader and runtime_sources.notebook_model before assuming a template field is parsed or used.
+  - Matching, correspondence discovery, and metrics are experimental heuristics; treat outputs as candidates, not facts.
+  - Paths are repository-relative. URLs point to the current main branch and may change if files move.
